@@ -1,0 +1,90 @@
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+h1 {
+  color: #f00;
+  text-align: center;
+  align-self: center;
+}
+
+.text-black {
+  color: #000;
+}
+
+.button-group {
+  text-align: center;
+  margin: 10px 0;
+}
+.button-group .btn {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 0 5px;
+  border: #f00 solid 1px;
+  border-radius: 20px;
+}
+.button-group .btn.active {
+  background-color: #f00;
+  color: #fff;
+}
+
+.row {
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  padding: 0;
+  border: none;
+  box-shadow: 9px 10px 19px -7px rgba(0, 0, 0, 0.75);
+}
+.card img {
+  transition: transform 0.5s ease;
+}
+.card .card-hover {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0) 100%);
+  transition: bottom 0.5s ease;
+}
+.card .card-hover .hover-text {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+.card:hover .card-hover {
+  bottom: 0;
+}
+
+.container-links {
+  margin-top: 0;
+}
+
+.navbar {
+  background-color: #222b37;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.active {
+  color: #f00 !important;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,56 @@
+.active-button {
+    background-color: red !important; // Brug !important for at overskrive Bulma's standarder, hvis nødvendigt
+    color: white !important; // Hvid tekstfarve for bedre læsbarhed
+    border-color: darken(red, 10%) !important; // En mørkere rød for grænsen for at tilføje dybde
+  
+    &:hover {
+      background-color: darken(red, 10%) !important; // Mørkere ved hover for en interaktiv effekt
+    }
+  }
+
+  .button{
+    border: solid 1px red;
+
+    &:hover {
+        border: solid 1px red;
+        color: red;
+    }
+  }
+
+
+  .card {
+    position: relative;
+    overflow: hidden;
+    .hover-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0) 100%);
+      color: white;
+      transform: translateY(100%);
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px; // Juster efter behov
+      .hover-text {
+        text-align: center;
+        padding: 15px;
+      }
+    }
+    &:hover {
+      .hover-content {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .navbar{
+    background-color: #222b37 !important;
+  }
+  
+.active{
+  color: red !important;
+}
+  
